@@ -10,7 +10,7 @@ class NginxConfig
     clean_urls: false,
     https_only: false,
     basic_auth: false,
-    basic_auth_htpasswd_path: "/app/.htpasswd",
+    basic_auth_htpasswd_path: "/app/ui/.htpasswd",
     worker_connections: 512,
     resolver: "8.8.8.8",
     logging: {

@@ -1,7 +1,7 @@
 # ghetto require, since mruby doesn't have require
-eval(File.read('/app/bin/config/lib/nginx_config_util.rb'))
+eval(File.read('/app/ui/bin/config/lib/nginx_config_util.rb'))
 
-USER_CONFIG = "/app/static.json"
+USER_CONFIG = "/app/ui/static.json"
 
 config      = {}
 config      = JSON.parse(File.read(USER_CONFIG)) if File.exist?(USER_CONFIG)
