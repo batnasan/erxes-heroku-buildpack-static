@@ -1,5 +1,5 @@
 # ghetto require, since mruby doesn't have require
-eval(File.read('/app/ui/bin/config/lib/nginx_config_util.rb'))
+eval(File.read('/app/ui/config/lib/nginx_config_util.rb'))
 
 USER_CONFIG = "/app/ui/static.json"
 
