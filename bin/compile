@@ -26,7 +26,7 @@ mkdir -p $build_dir/bin
 $(fetch_nginx_tarball) | tar xzC $build_dir/bin
 nginx_version=$($build_dir/bin/nginx-$STACK -V 2>&1 | head -1 | awk '{ print $NF }')
 cp -a $bp_dir/scripts/{boot,config} -t $build_dir/bin/
-echo "-----> Installed ${nginx_version} to /app/bin"
+echo "-----> Installed ${nginx_version} to /app/ui/bin"
 
 mkdir -p $build_dir/config
 cp $bp_dir/scripts/config/templates/mime.types $build_dir/config
